@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коза и нейросети — Экопродукты с душой</title>
+    <meta name="description" content="Эко-проект «Коза и нейросети» — натуральные продукты, ремесленные товары и мастер-классы. Экологичный подход к жизни.">
+    <meta property="og:title" content="Коза и нейросети — Экопродукты с душой">
+    <meta property="og:description" content="Натуральные продукты, ремесленные товары и эко-мастер-классы. Забота об экологии и вашем здоровье.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/og-image.png">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container header__inner">
+        <a href="#hero" class="header__logo">
+            <svg class="header__logo-icon" viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+                <circle cx="20" cy="20" r="18" fill="#8A9A5B"/>
+                <text x="20" y="26" text-anchor="middle" fill="#fff" font-size="18" font-family="Inter, sans-serif" font-weight="700">K</text>
+            </svg>
+            <span>Коза и нейросети</span>
+        </a>
+        <nav class="header__nav" id="nav" aria-label="Основная навигация">
+            <ul class="header__nav-list">
+                <li><a href="#hero" class="header__nav-link active">Главная</a></li>
+                <li><a href="#about" class="header__nav-link">О нас</a></li>
+                <li><a href="#services" class="header__nav-link">Услуги</a></li>
+                <li><a href="#process" class="header__nav-link">Как мы работаем</a></li>
+                <li><a href="#reviews" class="header__nav-link">Отзывы</a></li>
+                <li><a href="#faq" class="header__nav-link">FAQ</a></li>
+                <li><a href="#contacts" class="header__nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="header__burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <section class="hero" id="hero">
+        <div class="container hero__inner">
+            <div class="hero__content fade-in">
+                <h1 class="hero__title">Коза и нейросети</h1>
+                <p class="hero__subtitle">Экопродукты с душой</p>
+                <p class="hero__text">Мы соединяем традиционное ремесленничество с современным подходом. Натуральные продукты ручной работы, созданные с заботой о вас и об экологии.</p>
+                <a href="#services" class="btn btn--primary">Узнать больше</a>
+            </div>
+            <div class="hero__visual fade-in">
+                <svg class="hero__illustration" viewBox="0 0 400 350" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#8A9A5B;stop-opacity:0.15"/>
+                            <stop offset="100%" style="stop-color:#DDE0C4;stop-opacity:0.3"/>
+                        </linearGradient>
+                    </defs>
+                    <rect x="50" y="30" width="300" height="280" rx="24" fill="url(#heroGrad)"/>
+                    <g transform="translate(130, 60)">
+                        <ellipse cx="70" cy="90" rx="50" ry="60" fill="#8A9A5B" opacity="0.7"/>
+                        <ellipse cx="70" cy="85" rx="45" ry="55" fill="#a3b56c"/>
+                        <circle cx="55" cy="70" r="5" fill="#333"/>
+                        <circle cx="85" cy="70" r="5" fill="#333"/>
+                        <ellipse cx="70" cy="82" rx="8" ry="5" fill="#d4a373"/>
+                        <circle cx="67" cy="81" r="1.5" fill="#333"/>
+                        <circle cx="73" cy="81" r="1.5" fill="#333"/>
+                        <path d="M50 40 Q40 20 55 30" stroke="#8A9A5B" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        <path d="M90 40 Q100 20 85 30" stroke="#8A9A5B" stroke-width="4" fill="none" stroke-linecap="round"/>
+                        <rect x="55" y="145" width="8" height="30" rx="4" fill="#a3b56c"/>
+                        <rect x="77" y="145" width="8" height="30" rx="4" fill="#a3b56c"/>
+                        <path d="M20 130 Q70 160 120 130" stroke="#8A9A5B" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    </g>
+                    <circle cx="80" cy="60" r="8" fill="#8A9A5B" opacity="0.2"/>
+                    <circle cx="320" cy="90" r="12" fill="#8A9A5B" opacity="0.15"/>
+                    <circle cx="60" cy="250" r="6" fill="#8A9A5B" opacity="0.25"/>
+                    <circle cx="340" cy="230" r="10" fill="#8A9A5B" opacity="0.2"/>
+                    <path d="M30 280 Q50 270 70 280 Q90 290 110 280" stroke="#8A9A5B" stroke-width="2" fill="none" opacity="0.3"/>
+                    <path d="M290 270 Q310 260 330 270 Q350 280 370 270" stroke="#8A9A5B" stroke-width="2" fill="none" opacity="0.3"/>
+                </svg>
+            </div>
+        </div>
+        <div class="hero__pattern" aria-hidden="true"></div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">О нас</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about__grid">
+                <div class="about__text fade-in">
+                    <p>«Коза и нейросети» — это проект о возвращении к истокам. Мы верим, что натуральные продукты, созданные вручную, несут в себе тепло и заботу, которых так не хватает в мире массового производства.</p>
+                    <p>Наша философия проста: мы используем силу природы и современные знания, чтобы создавать продукты, полезные для людей и безопасные для планеты. Каждый наш товар — это результат тщательной работы, где ремесленное мастерство встречается с вниманием к деталям.</p>
+                    <p>Мы заботимся об экологии на каждом этапе: от выбора сырья до упаковки. Наша цель — показать, что устойчивый бизнес может быть успешным, а натуральные продукты — доступными каждому.</p>
+                </div>
+                <div class="about__visual fade-in">
+                    <div class="about__icon-grid">
+                        <div class="about__icon-item">
+                            <svg viewBox="0 0 64 64" class="about__icon" aria-hidden="true">
+                                <circle cx="32" cy="32" r="30" fill="#E3E6D3" stroke="#8A9A5B" stroke-width="2"/>
+                                <path d="M20 38 Q32 18 44 38" stroke="#8A9A5B" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M24 36 Q32 24 40 36" stroke="#8A9A5B" stroke-width="2" fill="none" stroke-linecap="round"/>
+                                <circle cx="32" cy="42" r="4" fill="#8A9A5B"/>
+                            </svg>
+                            <span>Натуральность</span>
+                        </div>
+                        <div class="about__icon-item">
+                            <svg viewBox="0 0 64 64" class="about__icon" aria-hidden="true">
+                                <circle cx="32" cy="32" r="30" fill="#E3E6D3" stroke="#8A9A5B" stroke-width="2"/>
+                                <path d="M22 40 L32 20 L42 40 Z" stroke="#8A9A5B" stroke-width="2" fill="none" stroke-linejoin="round"/>
+                                <line x1="32" y1="28" x2="32" y2="34" stroke="#8A9A5B" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="32" cy="37" r="1" fill="#8A9A5B"/>
+                            </svg>
+                            <span>Экология</span>
+                        </div>
+                        <div class="about__icon-item">
+                            <svg viewBox="0 0 64 64" class="about__icon" aria-hidden="true">
+                                <circle cx="32" cy="32" r="30" fill="#E3E6D3" stroke="#8A9A5B" stroke-width="2"/>
+                                <path d="M20 32 C20 22 32 18 32 28 C32 18 44 22 44 32 C44 42 32 48 32 48 C32 48 20 42 20 32Z" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                            </svg>
+                            <span>Забота</span>
+                        </div>
+                        <div class="about__icon-item">
+                            <svg viewBox="0 0 64 64" class="about__icon" aria-hidden="true">
+                                <circle cx="32" cy="32" r="30" fill="#E3E6D3" stroke="#8A9A5B" stroke-width="2"/>
+                                <rect x="22" y="26" width="20" height="16" rx="3" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                                <path d="M22 30 L32 36 L42 30" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                            </svg>
+                            <span>Ремесло</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Наши услуги</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Мы предлагаем натуральные продукты и уникальный опыт</p>
+            </div>
+            <div class="services__grid">
+
+                <div class="service-card fade-in" data-service="craft">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 80 80" aria-hidden="true">
+                            <circle cx="40" cy="40" r="38" fill="#E3E6D3"/>
+                            <g transform="translate(16, 14)">
+                                <rect x="8" y="20" width="32" height="28" rx="4" stroke="#8A9A5B" stroke-width="2.5" fill="none"/>
+                                <path d="M12 20 V16 Q24 8 36 16 V20" stroke="#8A9A5B" stroke-width="2.5" fill="none"/>
+                                <line x1="16" y1="30" x2="32" y2="30" stroke="#8A9A5B" stroke-width="2"/>
+                                <line x1="16" y1="36" x2="28" y2="36" stroke="#8A9A5B" stroke-width="2"/>
+                                <circle cx="24" cy="42" r="3" fill="#8A9A5B"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Ремесленные товары</h3>
+                    <p class="service-card__desc">Уникальные изделия ручной работы из натуральных материалов. Каждый товар — маленький шедевр, созданный с любовью и вниманием к деталям.</p>
+                    <button class="service-card__btn btn btn--outline" data-target="craft-details" aria-expanded="false">Узнать больше</button>
+                    <div class="service-card__details" id="craft-details" hidden>
+                        <p>Наши ремесленные товары включают:</p>
+                        <ul>
+                            <li>Мыло ручной работы из натуральных масел</li>
+                            <li>Свечи из натурального воска</li>
+                            <li>Текстильные изделия из有机 хлопка</li>
+                            <li>Керамическая посуда ручной работы</li>
+                            <li>Мешочки и сумки из натуральных тканей</li>
+                        </ul>
+                        <p>Каждое изделие проходит строгий контроль качества и сделано из экологически чистых материалов.</p>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in" data-service="classes">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 80 80" aria-hidden="true">
+                            <circle cx="40" cy="40" r="38" fill="#E3E6D3"/>
+                            <g transform="translate(14, 12)">
+                                <rect x="6" y="24" width="40" height="28" rx="4" stroke="#8A9A5B" stroke-width="2.5" fill="none"/>
+                                <path d="M20 24 V18 Q26 12 32 18 V24" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                                <circle cx="18" cy="36" r="4" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                                <circle cx="34" cy="36" r="4" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                                <path d="M16 44 Q26 48 36 44" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                                <line x1="10" y1="14" x2="10" y2="24" stroke="#8A9A5B" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="42" y1="14" x2="42" y2="24" stroke="#8A9A5B" stroke-width="2" stroke-linecap="round"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Эко-мастер-классы</h3>
+                    <p class="service-card__desc">Научитесь создавать натуральные продукты своими руками. Интерактивные занятия для взрослых и детей в уютной фермерской атмосфере.</p>
+                    <button class="service-card__btn btn btn--outline" data-target="classes-details" aria-expanded="false">Узнать больше</button>
+                    <div class="service-card__details" id="classes-details" hidden>
+                        <p>Наши мастер-классы:</p>
+                        <ul>
+                            <li>«Создаём мыло» — 3 часа, изучаем рецепты и техники</li>
+                            <li>«Восковые свечи» — 2 часа, разные формы и ароматы</li>
+                            <li>«Керамика для начинающих» — 4 часа, от глины до готового изделия</li>
+                            <li>«Детский эко-клуб» — программа для детей от 6 лет</li>
+                        </ul>
+                        <p>Все материалы включены в стоимость. Вы уносите с собой результаты своей работы!</p>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in" data-service="tours">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 80 80" aria-hidden="true">
+                            <circle cx="40" cy="40" r="38" fill="#E3E6D3"/>
+                            <g transform="translate(14, 14)">
+                                <path d="M10 44 L10 20 L24 12 L38 20 L38 44" stroke="#8A9A5B" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+                                <rect x="18" y="30" width="12" height="14" rx="2" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                                <circle cx="30" cy="34" r="2" fill="#8A9A5B"/>
+                                <path d="M4 44 L44 44" stroke="#8A9A5B" stroke-width="2.5" stroke-linecap="round"/>
+                                <path d="M42 28 Q48 26 48 32 Q48 38 42 36" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                                <line x1="6" y1="44" x2="6" y2="20" stroke="#8A9A5B" stroke-width="2" stroke-linecap="round"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Экскурсии на ферму</h3>
+                    <p class="service-card__desc">Познакомьтесь с жизнью фермы, увидьте, как создаются натуральные продукты, и проведите незабываемый день на природе.</p>
+                    <button class="service-card__btn btn btn--outline" data-target="tours-details" aria-expanded="false">Узнать больше</button>
+                    <div class="service-card__details" id="tours-details" hidden>
+                        <p>Программа экскурсии:</p>
+                        <ul>
+                            <li>Знакомство с животными на ферме</li>
+                            <li>Производственный тур — от сырья до готового продукта</li>
+                            <li>Дегустация натуральных продуктов</li>
+                            <li>Прогулка по территории фермы</li>
+                            <li>Чай с травами из нашего сада</li>
+                        </ul>
+                        <p>Экскурсии проводятся по выходным, группа до 15 человек. Предварительная запись обязательна.</p>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in" data-service="gifts">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 80 80" aria-hidden="true">
+                            <circle cx="40" cy="40" r="38" fill="#E3E6D3"/>
+                            <g transform="translate(14, 14)">
+                                <rect x="8" y="24" width="36" height="24" rx="4" stroke="#8A9A5B" stroke-width="2.5" fill="none"/>
+                                <line x1="26" y1="24" x2="26" y2="48" stroke="#8A9A5B" stroke-width="2"/>
+                                <path d="M8 32 L44 32" stroke="#8A9A5B" stroke-width="2"/>
+                                <path d="M20 24 Q14 16 18 12 Q22 8 26 16" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                                <path d="M32 24 Q38 16 34 12 Q30 8 26 16" stroke="#8A9A5B" stroke-width="2" fill="none"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Подарочные наборы</h3>
+                    <p class="service-card__desc">Готовые подарочные наборы натуральных продуктов — идеальный подарок для близких, ценящих качество и экологичность.</p>
+                    <button class="service-card__btn btn btn--outline" data-target="gifts-details" aria-expanded="false">Узнать больше</button>
+                    <div class="service-card__details" id="gifts-details" hidden>
+                        <p>Наши наборы:</p>
+                        <ul>
+                            <li>«Здоровье» — набор целебных чаёв и мёда</li>
+                            <li>«Уют» — мыло, свечи и мешочек для ванны</li>
+                            <li>«Для мамы» — натуральная косметика ручной работы</li>
+                            <li>«Корпоративный» — брендированные наборы для партнёров</li>
+                        </ul>
+                        <p>Каждый набор упакован в экологичную крафтовую бумагу. Возможна персонализация.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Как мы работаем</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="process__timeline">
+                <div class="process__step fade-in">
+                    <div class="process__number">01</div>
+                    <div class="process__content">
+                        <h3>Выбор сырья</h3>
+                        <p>Мы тщательно отбираем только натуральное, экологически чистое сырьё у проверенных поставщиков.</p>
+                    </div>
+                </div>
+                <div class="process__step fade-in">
+                    <div class="process__number">02</div>
+                    <div class="process__content">
+                        <h3>Ручная обработка</h3>
+                        <p>Каждое изделие создаётся вручную — без конвейеров, с вниманием к каждой детали.</p>
+                    </div>
+                </div>
+                <div class="process__step fade-in">
+                    <div class="process__number">03</div>
+                    <div class="process__content">
+                        <h3>Контроль качества</h3>
+                        <p>Мы проверяем каждый продукт перед отправкой, чтобы вы получали только лучшее.</p>
+                    </div>
+                </div>
+                <div class="process__step fade-in">
+                    <div class="process__number">04</div>
+                    <div class="process__content">
+                        <h3>Эко-доставка</h3>
+                        <p>Отправляем в переработанной упаковке. Экологично и безопасно для природы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="reviews__carousel" id="reviewsCarousel">
+                <div class="reviews__track">
+                    <div class="review-card">
+                        <div class="review-card__avatar">
+                            <svg viewBox="0 0 60 60" aria-hidden="true">
+                                <circle cx="30" cy="30" r="28" fill="#E3E6D3"/>
+                                <circle cx="30" cy="24" r="10" fill="#8A9A5B" opacity="0.5"/>
+                                <path d="M12 52 Q30 38 48 52" fill="#8A9A5B" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="review-card__stars" aria-label="5 из 5 звёзд">★★★★★</div>
+                        <p class="review-card__text">«Заказывали мыло ручной работы на подарок — все в восторге! Аромат натуральный, кожа после него как шёлк. Теперь постоянный клиент.»</p>
+                        <span class="review-card__author">— Анна К.</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__avatar">
+                            <svg viewBox="0 0 60 60" aria-hidden="true">
+                                <circle cx="30" cy="30" r="28" fill="#E3E6D3"/>
+                                <circle cx="30" cy="24" r="10" fill="#8A9A5B" opacity="0.5"/>
+                                <path d="M12 52 Q30 38 48 52" fill="#8A9A5B" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="review-card__stars" aria-label="5 из 5 звёзд">★★★★★</div>
+                        <p class="review-card__text">«Мастер-класс по изготовлению свечей — это было волшебно! Дети в полном восторге, а свечи получились невероятно красивыми. Рекомендую всем!»</p>
+                        <span class="review-card__author">— Мария Д.</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-card__avatar">
+                            <svg viewBox="0 0 60 60" aria-hidden="true">
+                                <circle cx="30" cy="30" r="28" fill="#E3E6D3"/>
+                                <circle cx="30" cy="24" r="10" fill="#8A9A5B" opacity="0.5"/>
+                                <path d="M12 52 Q30 38 48 52" fill="#8A9A5B" opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <div class="review-card__stars" aria-label="5 из 5 звёзд">★★★★★</div>
+                        <p class="review-card__text">«Экскурсия на ферму — незабываемый опыт! Увидеть, как всё делается с нуля, попробовать натуральные продукты — это настоящий отдых для души.»</p>
+                        <span class="review-card__author">— Дмитрий С.</span>
+                    </div>
+                </div>
+                <div class="reviews__controls">
+                    <button class="reviews__btn reviews__btn--prev" aria-label="Предыдущий отзыв">‹</button>
+                    <div class="reviews__dots" id="reviewsDots"></div>
+                    <button class="reviews__btn reviews__btn--next" aria-label="Следующий отзыв">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="faq__list fade-in">
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Как заказать продукцию?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Вы можете заказать продукцию через форму на сайте или написав нам в мессенджеры. После подтверждения заказа мы обработаем его в течение 1-2 рабочих дней и отправим удобным для вас способом.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Сколько занимает доставка?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Доставка по Москве — 1-2 дня, по России — 3-7 дней в зависимости от региона. Мы отправляем почтой России и транспортными компаниями. Стоимость доставки рассчитывается индивидуально.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Можно ли посетить ферму?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Да, мы проводим экскурсии по выходным. Группы до 15 человек. Нужно записаться заранее через форму на сайте или по телефону. Экскурсия длится около 2-3 часов и включает знакомство с животными, производственный тур и дегустацию.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Ваши продукты сертифицированы?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Все наши продукты соответствуют стандартам безопасности. Мы используем только натуральные компоненты и предоставляем полную информацию о составе каждого продукта. По запросу можем предоставить сертификаты качества.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" aria-expanded="false">
+                        <span>Есть ли гарантия возврата?</span>
+                        <svg class="faq__icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq__answer" hidden>
+                        <p>Да, если продукт не подошёл, вы можете вернуть его в течение 14 дней при условии сохранения упаковки. Для товаров надлежащего качества возврат возможен согласно Закону о защите прав потребителей.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe" id="subscribe">
+        <div class="container">
+            <div class="subscribe__inner fade-in">
+                <h2 class="subscribe__title">Будьте в курсе новинок</h2>
+                <p class="subscribe__desc">Подпишитесь на рассылку и получайте первыми информацию о новых продуктах, акциях и мастер-классах.</p>
+                <form class="subscribe__form" id="subscribeForm" novalidate>
+                    <div class="subscribe__form-group">
+                        <input type="email" id="emailInput" class="subscribe__input" placeholder="Ваш email" required autocomplete="email" aria-label="Email для подписки">
+                        <button type="submit" class="btn btn--primary subscribe__btn" id="subscribeBtn" disabled>Подписаться</button>
+                    </div>
+                    <label class="subscribe__checkbox-label">
+                        <input type="checkbox" id="privacyCheck" class="subscribe__checkbox" required>
+                        <span class="subscribe__checkbox-custom"></span>
+                        <span>Я согласен с <a href="#" class="subscribe__link" onclick="event.preventDefault()">политикой конфиденциальности</a></span>
+                    </label>
+                    <div class="subscribe__error" id="subscribeError" role="alert" aria-live="polite"></div>
+                </form>
+                <div class="subscribe__success" id="subscribeSuccess" hidden>
+                    <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+                        <circle cx="32" cy="32" r="30" fill="#8A9A5B" opacity="0.2"/>
+                        <circle cx="32" cy="32" r="20" fill="#8A9A5B" opacity="0.3"/>
+                        <polyline points="20 32 28 40 44 24" fill="none" stroke="#8A9A5B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>Спасибо за подписку! Мы отправили подтверждение на вашу почту.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer" id="contacts">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__info">
+                <a href="#hero" class="footer__logo">
+                    <svg viewBox="0 0 40 40" width="32" height="32" aria-hidden="true">
+                        <circle cx="20" cy="20" r="18" fill="#8A9A5B"/>
+                        <text x="20" y="26" text-anchor="middle" fill="#fff" font-size="18" font-family="Inter, sans-serif" font-weight="700">K</text>
+                    </svg>
+                    <span>Коза и нейросети</span>
+                </a>
+                <p class="footer__text">Экопродукты ручной работы с любовью к природе и заботой о вас.</p>
+            </div>
+            <div class="footer__links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <h4>Мы в соцсетях</h4>
+                <div class="footer__social-links">
+                    <a href="#" class="footer__social-link" aria-label="Telegram" onclick="event.preventDefault()">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.5 8.1l-1.8 8.5c-.14.6-.5.75-.99.47l-2.75-2.03-1.33 1.27c-.15.15-.27.27-.56.27l.2-2.82 5.1-4.61c.22-.2-.05-.3-.34-.12l-6.31 3.97-2.72-.85c-.59-.18-.6-.59.12-.88l10.63-4.1c.5-.18.93.12.77.88z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="VK" onclick="event.preventDefault()">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 13.5c.54.54 1.1 1.05 1.53 1.66.19.27.37.55.41.9.04.35-.15.65-.44.76l-2.24.16c-.52.04-.93-.13-1.29-.5-.29-.3-.56-.62-.84-.93-.12-.13-.24-.26-.38-.36-.37-.28-.69-.2-1.02.07-.34.28-.53.66-.68 1.07-.13.37-.32.76-.72.88-.37.11-.69-.01-.97-.28-1.43-1.4-2.57-3.07-3.47-4.92-.21-.43-.04-.66.42-.67.62-.01 1.23-.02 1.85-.02.27 0 .52.15.67.41.62 1.1 1.4 2.1 2.32 3.01.24.24.48.47.78.62.32.16.42.34.33.7-.1.42-.42.65-.83.72-.78.13-1.43-.2-2.01-.68-1.04-.86-1.87-1.9-2.6-3.03-.18-.27-.27-.58-.28-.91-.02-.72.27-1.15.96-1.32.37-.09.72-.13 1.06-.28.23-.1.42-.27.52-.51.06-.15.08-.31.04-.47-.12-.54-.44-.89-1.01-.95-.6-.06-1.14.05-1.61.42-.37.29-.61.69-.84 1.1-.4.72-.97 1.32-1.71 1.62-.32.13-.6.26-.84.47-.54.47-.34 1.15.1 1.58.97.95 2.05 1.77 3.22 2.46.84.49 1.74.85 2.73 1.02.42.07.81-.05 1.08-.39.22-.27.33-.6.34-.96.02-.56-.05-1.07-.29-1.57-.22-.46-.55-.85-.91-1.18l-.14-.13z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram" onclick="event.preventDefault()">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85 0 3.2-.01 3.58-.07 4.85-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07-3.2 0-3.58-.01-4.85-.07-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.64-.07-4.85 0-3.2.01-3.58.07-4.85C2.38 3.85 3.9 2.31 7.15 2.23 8.42 2.18 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 Коза и нейросети. Все права защищены.</p>
+            <a href="#" onclick="event.preventDefault()">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Вернуться наверх">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
